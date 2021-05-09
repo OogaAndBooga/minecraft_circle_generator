@@ -240,7 +240,7 @@ while True:
         if selecting_circle:
             pos = pygame.mouse.get_pos()
             pos = get_square_coords(convert_from_canvas(Point(pos[0], pos[1])))
-        text = pygame.freetype.SysFont("hahaha", 30)
+        text = pygame.freetype.SysFont("arial", 30)
         if circle_center_is_0:
             text.render_to(canvas, (0, 0), str(round(get_distance(Point(0, 0), get_square_center(pos)) / square_size, 2)), 'black')
         else:
